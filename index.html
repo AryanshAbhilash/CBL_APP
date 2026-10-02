@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>PhytoSense | Smart Farming</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet"
+        href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ===============================
+         HEADER
+    ================================ -->
+
+    <header>
+
+        <div class="container header-content">
+
+
+            <!-- LOGO -->
+
+            <div class="logo">
+
+                      <svg class="brand-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M6 26C6 14 14 4 26 4C26 16 18 26 6 26Z" fill="#5F9463"/>
+        <path d="M8.5 23.5C12.5 16 18 10 24 6" stroke="#FAF7EF" stroke-width="1.4" stroke-linecap="round"/>
+        <circle cx="23.5" cy="6.5" r="2.3" fill="#E4B24A"/>
+      </svg>
+
+                <div>
+
+                    <h1>PhytoSense</h1>
+
+                    <p>Smart farming made simple.</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- LIVE STATUS -->
+
+            <div class="live-status">
+
+                <span class="live-dot"></span>
+
+                LIVE
+
+            </div>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ===============================
+         MAIN
+    ================================ -->
+
+    <main>
+
+        <div class="container">
+
+
+            <!-- ===============================
+                 INTRO
+            ================================ -->
+
+            <section class="page-intro">
+
+                <h2>
+                    Your farm,<br>
+                    understood.
+                </h2>
+
+                <p>
+                    PhytoSense monitors your soil conditions
+                    and gives simple recommendations to help
+                    you make better farming decisions.
+                </p>
+
+            </section>
+
+
+
+            <!-- ===============================
+                 CROP STATUS
+            ================================ -->
+
+            <section class="crop-status">
+
+
+                <div class="crop-status-left">
+
+                    <div class="crop-icon">
+                        🌱
+                    </div>
+
+                    <div>
+
+                        <h4>Crop Condition</h4>
+
+                        <p>
+                            Based on current soil moisture
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="status-badge"
+                    id="cropStatus">
+
+                    Healthy
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- ===============================
+                 SENSOR SECTION
+            ================================ -->
+
+            <div class="section-title">
+
+                <h3>
+                    Live sensor readings
+                </h3>
+
+                <span>
+                    Updates every 60 seconds
+                </span>
+
+            </div>
+
+
+
+            <section class="sensor-grid">
+
+
+                <!-- SOIL MOISTURE -->
+
+                <div class="sensor-card">
+
+                    <div class="sensor-top">
+
+                        <span class="sensor-name">
+                            Soil Moisture
+                        </span>
+
+                        <div class="sensor-icon">
+                            💧
+                        </div>
+
+                    </div>
+
+                    <div class="sensor-value"
+                        id="moistureValue">
+
+                        42%
+
+                    </div>
+
+                    <div class="sensor-unit">
+                        Soil water content
+                    </div>
+
+                </div>
+
+
+
+                <!-- TEMPERATURE -->
+
+                <div class="sensor-card">
+
+                    <div class="sensor-top">
+
+                        <span class="sensor-name">
+                            Temperature
+                        </span>
+
+                        <div class="sensor-icon">
+                            🌡
+                        </div>
+
+                    </div>
+
+                    <div class="sensor-value"
+                        id="temperatureValue">
+
+                        28.4°C
+
+                    </div>
+
+                    <div class="sensor-unit">
+                        Soil temperature
+                    </div>
+
+                </div>
+
+
+
+                <!-- HUMIDITY -->
+
+                <div class="sensor-card">
+
+                    <div class="sensor-top">
+
+                        <span class="sensor-name">
+                            Humidity
+                        </span>
+
+                        <div class="sensor-icon">
+                            ☁
+                        </div>
+
+                    </div>
+
+                    <div class="sensor-value"
+                        id="humidityValue">
+
+                        67%
+
+                    </div>
+
+                    <div class="sensor-unit">
+                        Air humidity
+                    </div>
+
+                </div>
+
+
+
+                <!-- NITROGEN -->
+
+                <div class="sensor-card">
+
+                    <div class="sensor-top">
+
+                        <span class="sensor-name">
+                            Nitrogen
+                        </span>
+
+                        <div class="sensor-icon">
+                            N
+                        </div>
+
+                    </div>
+
+                    <div class="sensor-value"
+                        id="nitrogenValue">
+
+                        45 mg/kg
+
+                    </div>
+
+                    <div class="sensor-unit">
+                        Nitrogen concentration
+                    </div>
+
+                </div>
+
+
+
+                <!-- PHOSPHORUS -->
+
+                <div class="sensor-card">
+
+                    <div class="sensor-top">
+
+                        <span class="sensor-name">
+                            Phosphorus
+                        </span>
+
+                        <div class="sensor-icon">
+                            P
+                        </div>
+
+                    </div>
+
+                    <div class="sensor-value"
+                        id="phosphorusValue">
+
+                        32 mg/kg
+
+                    </div>
+
+                    <div class="sensor-unit">
+                        Phosphorus concentration
+                    </div>
+
+                </div>
+
+
+
+                <!-- POTASSIUM -->
+
+                <div class="sensor-card">
+
+                    <div class="sensor-top">
+
+                        <span class="sensor-name">
+                            Potassium
+                        </span>
+
+                        <div class="sensor-icon">
+                            K
+                        </div>
+
+                    </div>
+
+                    <div class="sensor-value"
+                        id="potassiumValue">
+
+                        51 mg/kg
+
+                    </div>
+
+                    <div class="sensor-unit">
+                        Potassium concentration
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- ===============================
+                 AI SECTION
+            ================================ -->
+
+            <section class="ai-section">
+
+
+                <!-- ===============================
+                     AI ADVICE
+                ================================ -->
+
+                <div class="ai-advice">
+
+
+                    <div class="ai-label">
+                        AI CROP ADVICE
+                    </div>
+
+
+                    <h3>
+                        Today's recommendation
+                    </h3>
+
+
+                    <p id="adviceText">
+
+                        You do not need to water today.
+                        The soil moisture is currently adequate.
+
+                    </p>
+
+
+                    <button
+                        class="speak-button"
+                        onclick="speakAdvice()">
+
+                        🔊 Speak Advice
+
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- ===============================
+                     VOICE ASSISTANT
+                ================================ -->
+
+                <div class="voice-assistant">
+
+
+                    <div class="voice-header">
+
+
+                        <div>
+
+                            <h3>
+                                Ask PhytoSense
+                            </h3>
+
+                            <p>
+                                Ask about your soil, crops
+                                or sensor readings.
+                            </p>
+
+                        </div>
+
+
+                        <!-- LANGUAGE -->
+
+                        <select id="languageSelect">
+
+                            <option value="en-IN">
+                                English
+                            </option>
+
+                            <option value="hi-IN">
+                                हिन्दी
+                            </option>
+
+                            <option value="mr-IN">
+                                मराठी
+                            </option>
+
+                            <option value="ta-IN">
+                                தமிழ்
+                            </option>
+
+                            <option value="te-IN">
+                                తెలుగు
+                            </option>
+
+                            <option value="kn-IN">
+                                ಕನ್ನಡ
+                            </option>
+
+                            <option value="ml-IN">
+                                മലയാളം
+                            </option>
+
+                            <option value="bn-IN">
+                                বাংলা
+                            </option>
+
+                            <option value="gu-IN">
+                                ગુજરાતી
+                            </option>
+
+                            <option value="pa-IN">
+                                ਪੰਜਾਬੀ
+                            </option>
+
+                        </select>
+
+
+                    </div>
+
+
+
+                    <!-- MICROPHONE -->
+
+                    <div class="microphone-area">
+
+                        <button
+                            id="microphoneButton"
+                            aria-label="Ask PhytoSense">
+
+                            🎙️
+
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- QUESTION -->
+
+                    <div class="voice-box">
+
+                        <div class="voice-box-label">
+                            Your question
+                        </div>
+
+                        <div id="questionText">
+
+                            Press the microphone and ask a question.
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ANSWER -->
+
+                    <div class="voice-box">
+
+                        <div class="voice-box-label">
+                            PhytoSense
+                        </div>
+
+                        <div id="answerText">
+
+                            I am ready to help you with your farm.
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- ===============================
+                 CHART
+            ================================ -->
+
+            <section class="chart-section">
+
+
+                <div class="chart-header">
+
+                    <div>
+
+                        <h3>
+                            Soil moisture history
+                        </h3>
+
+                        <p>
+                            Simulated readings
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="chart-container">
+
+                    <canvas id="moistureChart"></canvas>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- ===============================
+                 LAST UPDATED
+            ================================ -->
+
+            <div style="
+                text-align:center;
+                margin-top:20px;
+                color:#68736c;
+                font-size:11px;
+            ">
+
+                <span id="lastUpdated">
+                    Last updated: Now
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ===============================
+         FOOTER
+    ================================ -->
+
+    <footer>
+
+        <div class="container">
+
+            <strong>PhytoSense</strong>
+
+            &nbsp;—&nbsp;
+
+            Making smart farming accessible to everyone.
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ===============================
+         CHART.JS
+    ================================ -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/chart.js">
+    </script>
+
+
+    <!-- ===============================
+         MAIN JAVASCRIPT
+    ================================ -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
